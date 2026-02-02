@@ -5,6 +5,8 @@ import { Home } from "./components/home";
 import { NavBar } from "./components/navbar";
 
 import { Companies } from "./components/companies";
+import { Projects } from "./components/projects";
+import { CommandMenu } from "./components/command-menu";
 import "./index.css";
 
 export default function App() {
@@ -22,7 +24,9 @@ export default function App() {
               {/* Removed vertical spacing to control per-section */}
               <Home />
               <Companies />
+              <Projects />
             </main>
+            <CommandMenu />
 
             <Footer />
           </div>

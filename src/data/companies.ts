@@ -11,51 +11,40 @@ export const companies: Company[] = [
   {
     name: "Stout",
     logo: "/companies/stout.png",
-    role: "Lead Data Engineer",
+    role: "Software Engineering Consultant",
     period: "Apr 2025 - Present",
+    link: "https://www.stout.com/en",
     description:
-      "Built a scalable data extraction pipeline in Azure Data Factory that automated retrieval and parsing of 10-K filings from the SEC EDGAR database, increasing document processing efficiency by over 70% and saving the company over $70,000 in operational costs. Designed a normalized data model supporting 15+ investment entities and led architectural planning for high-volume document workflows.",
+      "Built an automated system to pull and organize financial documents (10-K filings) from the SEC. This sped up document processing by 70% and saved the company over $70,000 in manual work.",
   },
   {
     name: "Oil Changers",
     logo: "/companies/oil-changers.png",
-    role: "Data Engineer",
+    role: "Software Engineering Consultant",
     period: "Oct 2024 - Present",
     description:
-      "Engineered a scalable behavioral segmentation model leveraging SQL Server stored procedures. Designed and maintained multiple FACT tables for customer lifetime value (CLV) pipelines. Optimized critical data pipelines, resulting in a 40% improvement in data consistency and faster reporting.",
+      "Created a customer tracking system to help the business understand spending habits (Customer Lifetime Value). Cleaned up their data processes, making reports 40% more consistent and faster to generate.",
+    link: "https://oilchangers.com/discounts/",
   },
   {
     name: "Hrvst",
     logo: "/companies/hrvst.png",
-    role: "Data Engineer",
+    role: "Software Engineering Consultant",
     period: "Jul 2024 - Present",
     description:
-      "Built an end-to-end automated reporting pipeline using Power BI and SQL, integrating data from Zoho Books and a custom WhatsApp client. Eliminated a manual 7-day reporting workflow by replacing Excel with real-time dashboards, cutting report generation time to under 5 minutes.",
+      "Automated their weekly reporting. Replaced a slow manual Excel process with real-time dashboards that update in under 5 minutes, saving the team days of work every week.",
     link: "https://www.linkedin.com/company/aiponics/posts/?feedView=all",
   },
-  {
-    name: "ChitChat",
-    logo: "/companies/chitchat.svg",
-    role: "Senior Software Engineer",
-    period: "Sept 2025 - Present",
-    description:
-      "Led backend development for ChitChat’s Family Managed Wallets, handling infrastructure, card assignment, spending limits, and KYC. Automated financial reporting to the central bank as the sole engineer of the reporting-service tool.",
-    link: "https://chitchatchannel.com",
-  },
+
   {
     name: "Union 54",
     logo: "/companies/union54.png",
     role: "Software Engineer",
+    link: "https://union54.com",
     description:
-      "Contributed to building the card issuing API wrapper that powered ChitChat and other fintech products. Helped streamline the integration process for early adopters in the YC ecosystem.",
+      "Built the card issuing API that enabled multiple fintech startups in the YC ecosystem to launch their own card programs. Scaled the platform to handle significant transaction volume during the peak of the fintech boom.",
   },
-  {
-    name: "YCS21",
-    logo: "/companies/ycs21.png",
-    role: "Alumni / Batch",
-    description:
-      "Participated in Y Combinator Summer 2021 batch. Collaborated with top-tier founders and engineers to refine product-market fit and scale rapid-growth technologies.",
-  },
+
   {
     name: "The Zig Group",
     logo: "/companies/breeze.png", // Using Breeze as it's under Zig? Or maybe Shop and Smile? User said Breeze is under Zig. I'll use a generic icon or maybe I should have generated a Zig logo. I'll use the Breeze one for Breeze entry if I have one.
@@ -72,20 +61,20 @@ export const companies: Company[] = [
     role: "Founding Software Engineer",
     period: "May 2023 - Aug 2024",
     description:
-      "Built TypeScript serverless backend infrastructure supporting POS feature expansion. Contributed to scaling a distributed Point-of-Sale SaaS platform that enabled merchants to streamline daily operations.",
+      "Built a complete robust Point-of-Sale platform that allowed merchants to digitize their entire business. Enabled inventory tracking, automated tax compliance, and sales reporting—replacing pen-and-paper operations for efficiency.",
     link: "https://goshopandsmile.com",
   },
   {
-    name: "Wango Delivery",
+    name: "Bwangu Delivery",
     logo: "/companies/wango.png",
     role: "Founding Software Engineer",
     period: "Feb 2021 - Dec 2023",
     description:
-      "Led the development and deployment of three cross-platform React Native mobile applications. Enabled 10,000+ B2C orders in the first year and drove 25% month-over-month growth.",
+      "Solo Founding Engineer: Built the entire tech stack (Mobile, API, Admin Ops) from scratch. Scaled platform to 10,000+ orders/year and achieving 25% MoM growth with zero downtime.",
     link: "https://bwangudelivery.com",
   },
   {
-    name: "iSample",
+    name: "iSampo",
     logo: "/companies/isample.png",
     role: "Software Engineer",
     period: "Jul 2020 - Feb 2021",
