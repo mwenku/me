@@ -1,16 +1,40 @@
 export const NavBar = () => {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <div className="flex items-center justify-between container mx-auto px-5">
-      <div>
-        <p className="text-xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-red-700  via-orange-500 to-teal-900  hover:animate-rainbow duration-200">
-          @mwlnka
-        </p>
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-b from-background/90 via-background/50 to-transparent backdrop-blur-[2px] transition-all duration-300 pb-8">
+      <div className="flex items-center justify-between container mx-auto px-5 h-16">
+        <a href="/" className="group">
+          <p className="text-xl font-bold tracking-tighter text-foreground group-hover:text-primary transition-colors">
+            luke<span className="text-primary">.</span>welo
+            <span className="text-primary">.</span>nkuta
+          </p>
+        </a>
+
+        <div className="hidden md:flex items-center gap-8">
+          {["About", "Experience", "Projects"].map((item) => (
+            <button
+              key={item}
+              onClick={() => scrollToSection(item.toLowerCase())}
+              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors relative after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:h-[2px] after:w-0 after:bg-primary after:transition-all hover:after:w-full"
+            >
+              {item}
+            </button>
+          ))}
+        </div>
+
+        <button
+          onClick={() => scrollToSection("contact")}
+          className="hidden md:flex items-center justify-center px-4 py-2 text-sm font-medium text-primary-foreground bg-primary rounded-full hover:bg-primary/90 transition-all hover:shadow-lg hover:shadow-primary/25 active:scale-95"
+        >
+          Let's Talk
+        </button>
       </div>
-      <div>
-        {/* <a href="#projects" className="lg:hidden flex px-3 py-2 text-white shadow-xl shadow-orange-500 rounded-full bg-orange-600">
-          Go to Projects
-        </a> */}
-      </div>
-    </div>
+    </nav>
   );
 };

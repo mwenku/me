@@ -3,6 +3,8 @@ import CustomCursor from "./components/cursor";
 import { Footer } from "./components/footer";
 import { Home } from "./components/home";
 import { NavBar } from "./components/navbar";
+
+import { Companies } from "./components/companies";
 import "./index.css";
 
 export default function App() {
@@ -11,17 +13,16 @@ export default function App() {
       <Route
         path="*"
         element={
-          <div className="font-lato mt-10 max-w-7xl mx-auto">
-            <div>
-              <CustomCursor />
-              <NavBar />
+          <div className="min-h-screen bg-background text-foreground antialiased selection:bg-primary/20 selection:text-primary">
+            <CustomCursor />
+            <NavBar />
 
-              <div className="mt-20 mb-52">
-                <Home />
-              </div>
-            </div>
-
-            {/* <Projects /> */}
+            <main className="space-y-0">
+              {" "}
+              {/* Removed vertical spacing to control per-section */}
+              <Home />
+              <Companies />
+            </main>
 
             <Footer />
           </div>

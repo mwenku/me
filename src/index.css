@@ -2,6 +2,118 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
+@layer base {
+  :root {
+    /* Hyper-Minimalist Monochrome Theme */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 0%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 0 0% 96%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 0% 0%;
+
+    --radius: 0rem;
+  }
+
+  .dark {
+    --background: 0 0% 0%; /* True Black */
+    --foreground: 0 0% 100%;
+
+    --card: 0 0% 0%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 0%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 0 0% 100%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 0 0% 10%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-foreground selection:text-background;
+    font-feature-settings:
+      "rlig" 1,
+      "calt" 1;
+    font-family: "Inter", sans-serif;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Utilities */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Animations - Minimal fades only */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.delay-100 {
+  animation-delay: 100ms;
+}
+.delay-200 {
+  animation-delay: 200ms;
+}
+.delay-300 {
+  animation-delay: 300ms;
 }

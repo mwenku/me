@@ -1,11 +1,16 @@
-
-export default function Icons({ icon = 'github' }: { icon: "linkedin" | "github" }) {
+export default function Icons({
+  icon = "github",
+  className = "h-5 w-5",
+}: {
+  icon: "linkedin" | "github";
+  className?: string;
+}) {
   return (
     <>
       {icon === "github" && (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5"
+          className={className}
           fill="currentColor"
           viewBox="0 0 24 24"
         >
@@ -16,7 +21,7 @@ export default function Icons({ icon = 'github' }: { icon: "linkedin" | "github"
       {icon === "linkedin" && (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5"
+          className={className}
           fill="currentColor"
           viewBox="0 0 24 24"
         >
