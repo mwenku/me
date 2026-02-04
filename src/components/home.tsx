@@ -4,10 +4,9 @@ export const Home = () => {
   return (
     <section
       id="about"
-      className="pt-32 pb-16 lg:pt-48 container max-w-2xl mx-auto px-5"
+      className="pt-32 pb-16 lg:pt-48 container max-w-4xl mx-auto px-5"
     >
       <div className="flex flex-col items-start animate-fade-in opacity-0 delay-100">
-        <h1 className="text-xl font-medium text-foreground mb-4">mwlnka</h1>
         <p className="text-base text-muted-foreground leading-relaxed mb-8 text-balance">
           {RESUME.summary}
         </p>

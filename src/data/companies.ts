@@ -9,40 +9,40 @@ export interface Company {
 
 export const companies: Company[] = [
   {
+    name: "Union 54 (YC S21)",
+    logo: "/companies/union54.png",
+    role: "Software Engineer",
+    link: "https://www.linkedin.com/company/union54/posts/?feedView=all",
+    description:
+      "Built the card issuing API that enabled multiple startups to launch their own card programs. Scaled the platform to handle high transaction volumes.",
+  },
+
+  {
     name: "Stout",
     logo: "/companies/stout.png",
     role: "Software Engineering Consultant",
-    period: "Apr 2025 - Present",
-    link: "https://www.stout.com/en",
+    period: "August 2025 - September 2025",
+    link: "https://www.linkedin.com/company/stout/about/",
     description:
-      "Built an automated system to pull and organize financial documents (10-K filings) from the SEC. This sped up document processing by 70% and saved the company over $70,000 in manual work.",
+      "Built an automated system to pull and organize financial documents (10-K filings) from the SEC. This sped up document processing by 70% and saved the company over $70,000 annually in manual work.",
   },
   {
     name: "Oil Changers",
     logo: "/companies/oil-changers.png",
     role: "Software Engineering Consultant",
-    period: "Oct 2024 - Present",
+    period: "Jan 2025 - September 2025",
     description:
-      "Created a customer tracking system to help the business understand spending habits (Customer Lifetime Value). Cleaned up their data processes, making reports 40% more consistent and faster to generate.",
-    link: "https://oilchangers.com/discounts/",
+      "Led the rollout of real-time alerting infrastructure across 4+ projects and established a modular Domain-Driven Design (DDD) architecture that saved 20+ hours of rework per major change. Delivered full-stack predictive analytics features and client-facing reports, while implementing reusable CI/CD pipelines that reduced feature wait times by 3 days.",
+    link: "https://www.linkedin.com/company/oil-changers-ca/posts/?feedView=all",
   },
   {
-    name: "Hrvst",
+    name: "Aiponics Inc",
     logo: "/companies/hrvst.png",
     role: "Software Engineering Consultant",
-    period: "Jul 2024 - Present",
+    period: "Jul 2024 - Dec 2025",
     description:
       "Automated their weekly reporting. Replaced a slow manual Excel process with real-time dashboards that update in under 5 minutes, saving the team days of work every week.",
     link: "https://www.linkedin.com/company/aiponics/posts/?feedView=all",
-  },
-
-  {
-    name: "Union 54",
-    logo: "/companies/union54.png",
-    role: "Software Engineer",
-    link: "https://union54.com",
-    description:
-      "Built the card issuing API that enabled multiple fintech startups in the YC ecosystem to launch their own card programs. Scaled the platform to handle significant transaction volume during the peak of the fintech boom.",
   },
 
   {
@@ -51,8 +51,8 @@ export const companies: Company[] = [
     role: "Software Engineering Consultant",
     period: "Jul 2024 - Aug 2025",
     description:
-      "Expanded market reach for Aiponics Inc from B2B to B2C, generating $1 million in annual GMV through backend feature development and platform integration. Automated 90% of B2B ordering workflows, enabling the team to handle a larger client base. Deployed predictive analytics across Breeze Autocare's 200+ service locations, driving major efficiency gains. Led and mentored 6+ Data Engineering, Analytics, and AI interns, resulting in 4 return offers.",
-    link: "https://www.thezig.io",
+      "Helped Aiponics expand from B2B to consumer markets, generating $1M in revenue by connecting their platform to a major delivery app. Automated 90% of ordering workflows so the team could handle more clients. Built a predictive analytics system for Breeze Autocare across 200+ locations to improve inventory efficiency.",
+    link: "https://www.linkedin.com/company/the-zig/",
   },
 
   {
@@ -61,8 +61,8 @@ export const companies: Company[] = [
     role: "Founding Software Engineer",
     period: "May 2023 - Aug 2024",
     description:
-      "Built a complete robust Point-of-Sale platform that allowed merchants to digitize their entire business. Enabled inventory tracking, automated tax compliance, and sales reporting—replacing pen-and-paper operations for efficiency.",
-    link: "https://goshopandsmile.com",
+      "Improved deployment times by 60x for 24+ backend services by migrating to a faster AWS Lambda deployment tool. Developed Rust and Node.js CLI tools that increased developer velocity by 25%. Implemented end-to-end type-safe wrappers for AWS EventBridge and used Domain-Driven Design (DDD) to enable rapid database replacements without logic rewrites.",
+    link: "https://shopnsmile.org/",
   },
   {
     name: "Bwangu Delivery",
@@ -71,7 +71,7 @@ export const companies: Company[] = [
     period: "Feb 2021 - Dec 2023",
     description:
       "Solo Founding Engineer: Built the entire tech stack (Mobile, API, Admin Ops) from scratch. Scaled platform to 10,000+ orders/year and achieving 25% MoM growth with zero downtime.",
-    link: "https://bwangudelivery.com",
+    link: "https://www.linkedin.com/company/bwangudelivery/posts/?feedView=all",
   },
   {
     name: "iSampo",
@@ -79,6 +79,6 @@ export const companies: Company[] = [
     role: "Software Engineer",
     period: "Jul 2020 - Feb 2021",
     description:
-      "Modernized the commerce platform, replacing a fragile legacy system with a scalable API foundation and launching a cross-platform mobile app that significantly improved the shopping experience.",
+      "Rebuilt the online store, replacing an old system with a reliable API and a fast mobile app that significantly improved the shopping experience.",
   },
 ];

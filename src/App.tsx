@@ -6,6 +6,7 @@ import { NavBar } from "./components/navbar";
 
 import { Companies } from "./components/companies";
 import { Projects } from "./components/projects";
+import { Contact } from "./components/contact";
 import { CommandMenu } from "./components/command-menu";
 import "./index.css";
 
@@ -25,6 +26,7 @@ export default function App() {
               <Home />
               <Companies />
               <Projects />
+              <Contact />
             </main>
             <CommandMenu />
 

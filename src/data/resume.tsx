@@ -1,5 +1,5 @@
 export const RESUME = {
-  name: "Luke",
+  name: "",
   title: "Software Engineer",
   location: "",
   contacts: {
@@ -9,7 +9,7 @@ export const RESUME = {
     linkedin: "https://linkedin.com/in/mwelwa",
   },
   summary:
-    "Product-minded Software Engineer with a track record of building 0-to-1 products and scaling them to profitability. \n\nI specialize in TypeScript, Serverless, and Data Engineering. I've been a Founding Engineer at multiple startups (including YC-backed), where I scaled platforms from MVP to 10k+ users and millions in GMV. \n\nI thrive in fast-paced environments where I can own the entire stack—from designing scalable backend infrastructure to shipping polished frontend user experiences.",
+    "With over 6 years of product and consulting experience across small startups, large enterprises, and founding teams, I bring a unique perspective to building software. I specialize in scaling web applications and developer tools in diverse working environments.",
   skills: [
     "TypeScript",
     "Node.js",
@@ -41,7 +41,7 @@ export const RESUME = {
       location: "London, United Kingdom",
       description: [
         "Built the backend for Family Managed Wallets, enabling users to create and manage sub-accounts for dependents.",
-        "Owned the regulatory reporting system, automating compliance checks to ensure zero regulatory breaches with the central bank.",
+        "Owned the regulatory reporting tool, automating compliance checks to ensure zero regulatory breaches with the central bank.",
       ],
     },
     {
@@ -64,8 +64,8 @@ export const RESUME = {
       location: "Brussels, Belgium",
       link: "https://shopnsmile.org/",
       description: [
-        "Built the serverless infrastructure that allowed merchants to digitize their inventory and sales tracking.",
-        "Enabled the business to scale by automating tax compliance and reporting, saving merchants hours of manual bookkeeping.",
+        "Built the backend that allowed merchants to move their inventory and sales tracking online.",
+        "Helped the business grow by automating tax compliance and reporting, saving merchants hours of manual bookkeeping.",
       ],
     },
     {
@@ -75,7 +75,7 @@ export const RESUME = {
       period: "Feb 2021 - Dec 2023",
       location: "Copperbelt, Zambia",
       description: [
-        "Solo Founding Engineer: Built the entire tech stack (Mobile, API, Admin Ops) from scratch.",
+        "Solo Founding Engineer: Built the mobile app, API, and admin dashboard from scratch.",
         "Scaled platform to 10,000+ orders/year and achieving 25% MoM growth with zero downtime.",
       ],
     },
@@ -85,7 +85,7 @@ export const RESUME = {
       period: "Jul 2020 - Feb 2021",
       location: "Copperbelt, Zambia",
       description: [
-        "Modernized the commerce platform by replacing an old, buggy system with a reliable API and a fast new mobile app. This made checkout faster and the shopping experience smoother.",
+        "Rebuilt the online store by replacing an old, buggy system with a reliable API and a fast new mobile app. This made checkout faster and the shopping experience smoother.",
       ],
     },
   ],

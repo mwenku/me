@@ -1,15 +1,6 @@
-export const projects = [
-  {
-    title: "ChitChat",
-    description:
-      "A consumer fintech app with USD Wallets and Debit Cards. I built the regulatory reporting engine that ensured 100% compliance with central bank requirements.",
-    techStack: "TypeScript, Serverless, AWS CDK, DynamoDB, Lambda, SQS, SNS",
-    link: "https://onchitchat.com",
-    previews: [{ link: "https://onchitchat.com", title: "Website" }],
-    image: "", // Placeholder or we can try to find one later
-    video: "",
-  },
-];
+import projectsData from "../../data/projects.json";
+
+export const projects = projectsData;
 
 /**
  * Generates a redirect link and title based on the provided pathname.
