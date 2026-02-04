@@ -22,6 +22,7 @@ const CompanyRow = ({
   description,
   link,
   period,
+  location,
   index,
 }: {
   name: string;
@@ -29,6 +30,7 @@ const CompanyRow = ({
   description: string;
   link?: string;
   period?: string;
+  location?: string;
   index: number;
 }) => {
   return (
@@ -54,11 +56,10 @@ const CompanyRow = ({
           </h3>
           <span className="text-sm text-muted-foreground">— {role}</span>
         </div>
-        {period && (
-          <span className="text-sm text-muted-foreground/50 font-mono shrink-0">
-            {period.split(" - ")[0]}
-          </span>
-        )}
+        <div className="flex items-center gap-3 text-sm text-muted-foreground/50 font-mono shrink-0">
+          {location && <span>{location}</span>}
+          {period && <span>{period.split(" - ")[0]}</span>}
+        </div>
       </div>
 
       <p className="text-sm text-muted-foreground leading-relaxed max-w-xl">

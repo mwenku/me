@@ -1,32 +1,5 @@
 [
-  {
-    "title": "ChitChat",
-    "description": "A consumer fintech app with USD Wallets and Debit Cards. I built the regulatory reporting tool that ensured 100% compliance with central bank requirements.",
-    "techStack": "TypeScript, Serverless, AWS CDK, DynamoDB, Lambda, SQS, SNS",
-    "link": "https://onchitchat.com",
-    "previews": [
-      {
-        "link": "https://onchitchat.com",
-        "title": "Website"
-      }
-    ],
-    "image": "https://images.prismic.io/onchitchat/Z5kDQZbqstJ998w6_og-image.png?auto=format,compress&amp;rect=0,23,1200,630&amp;w=2400&amp;h=1260",
-    "video": ""
-  },
-  {
-    "title": "Bwangu Delivery",
-    "description": "Solo Founding Engineer: Built the entire tech stack (Mobile, API, Admin Ops) from scratch. Scaled to 10k+ downloads and 10,000+ orders/year with zero downtime.",
-    "techStack": "React Native, PHP, Node.js, Microsoft Azure",
-    "link": "https://www.linkedin.com/company/bwangudelivery/posts/?feedView=all",
-    "previews": [
-      {
-        "link": "https://www.linkedin.com/company/bwangudelivery/posts/?feedView=all",
-        "title": "LinkedIn"
-      }
-    ],
-    "image": "/companies/bwangu_delivery_play_store_banner.png",
-    "video": ""
-  },
+
   {
     "title": "Car Breakers’ Wall",
     "description": "Car Breakers’ Wall is a comprehensive platform designed for buying and selling car parts, vehicles, and automotive services. Whether you are a mechanic, car enthusiast, or simply in need of repairs, this app connects you with the right people and products.",

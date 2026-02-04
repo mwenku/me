@@ -35,7 +35,7 @@ export const RESUME = {
   experience: [
     {
       company: "ChitChat",
-      link: "https://chitchatchannel.com",
+      link: "https://onchitchat.com",
       role: "Senior Software Engineer",
       period: "Sept 2025 - Present",
       location: "London, United Kingdom",
