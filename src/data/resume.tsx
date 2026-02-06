@@ -17,6 +17,7 @@ export const RESUME = {
     "Next.js",
     "Serverless",
     "SQL",
+    "Fintech",
     "Python",
     "Firebase",
     "PostgreSQL",
@@ -24,37 +25,31 @@ export const RESUME = {
     "CI/CD",
     "Azure",
     "AWS",
-    "Kotlin",
-    "Flutter",
-    "Java",
-    "Data Engineering",
-    "ETL Processes",
     "System Design",
     "Product Management",
+    "Data Engineering",
   ],
   experience: [
     {
-      company: "ChitChat",
+      company: "Union 54 (ChitChat)",
       link: "https://onchitchat.com",
       role: "Senior Software Engineer",
       period: "Sept 2025 - Present",
       location: "London, United Kingdom",
       description: [
-        "Built the backend for Family Managed Wallets, enabling users to create and manage sub-accounts for dependents.",
-        "Owned the regulatory reporting tool, automating compliance checks to ensure zero regulatory breaches with the central bank.",
+        "Feature owner of the regulatory reporting service, ensuring central bank compliance by engineering a data pipeline from DynamoDB to structured BI reports.",
+        "Resurrected the core API for issuing MasterCard debit cards, ensuring platform reliability through active on-call maintenance and robust error handling.",
       ],
     },
     {
-      company: "The Zig Group, Inc.",
+      company: "The Zig Group",
       link: "https://www.thezig.io",
       role: "Software Engineering Consultant",
       period: "Jul 2024 - Aug 2025",
       location: "Seattle, Washington, USA",
       description: [
-        "Helped Aiponics grow from B2B to B2C, generating $1M in revenue by connecting their platform to a major delivery app.",
-        "Automated 90% of ordering workflows so the team could handle more clients without hiring more staff.",
-        "Built a predictive analytics system for Breeze Autocare across 200+ locations to improve inventory efficiency.",
-        "Led and mentored 6+ interns, helping 4 of them land full-time offers.",
+        "Architected an AI-driven internal CRM that transformed client onboarding by automating Statement of Work generation and converting contracts into actionable project tasks.",
+        "Built 'Ask AI,' an internal tool that reduced new hire ramp-up time by providing instant answers to project timelines and client history.",
       ],
     },
     {
@@ -91,8 +86,9 @@ export const RESUME = {
   ],
   education: [
     {
-      school: "Zambia University College of Technology",
-      degree: "Bachelor's of Science - Software Engineering",
+      school: "Northrise University",
+      degree:
+        "Bachelor's of Information Technology - Web Development & Software Engineering",
     },
   ],
 };

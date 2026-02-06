@@ -1,14 +1,27 @@
 [
-
+  {
+    "title": "Fleetle",
+    "description": "The Intelligent Fleet Platform Built for Africa. Fleetle uses AI to learn and predict fleet needs—from predictive maintenance and fuel theft detection to intelligent route optimization and driver safety monitoring—giving operators complete confidence in their operations under African road conditions.",
+    "techStack": "Next.js, TypeScript, Node.js, Go Lang, Serverless",
+    "link": "https://www.fleetle.app",
+    "previews": [
+      {
+        "link": "https://www.fleetle.app",
+        "title": "Website"
+      }
+    ],
+    "image": "/companies/fleetle_app.png",
+    "video": ""
+  },
   {
     "title": "Car Breakers’ Wall",
     "description": "Car Breakers’ Wall is a comprehensive platform designed for buying and selling car parts, vehicles, and automotive services. Whether you are a mechanic, car enthusiast, or simply in need of repairs, this app connects you with the right people and products.",
-    "techStack": "MongoDB, Node.js, TypeScript, ",
-    "link": "https://play.google.com/store/apps/details?id=com.yusra.cbw",
+    "techStack": "MongoDB, Node.js, TypeScript",
+    "link": "https://apps.apple.com/zm/app/car-breakers-wall/id6746924312",
     "previews": [
       {
-        "link": "https://play.google.com/store/apps/details?id=com.yusra.cbw",
-        "title": "Play Store"
+        "link": "https://apps.apple.com/zm/app/car-breakers-wall/id6746924312",
+        "title": "App Store"
       }
     ],
     "image": "/companies/car-breakers-wall.png",

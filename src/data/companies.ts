@@ -17,7 +17,7 @@ export const companies: Company[] = [
     period: "Sept 2025 - Present",
     location: "Remote, USA",
     description:
-      "Built the card issuing API that enabled multiple startups to launch their own card programs. Scaled the platform to handle high transaction volumes.",
+      "Feature owner of the regulatory reporting service, ensuring central bank compliance by engineering a data pipeline from DynamoDB to structured BI reports. Resurrected the core API for issuing MasterCard debit cards, while ensuring platform reliability through active on-call maintenance.",
   },
 
   {
@@ -28,7 +28,7 @@ export const companies: Company[] = [
     link: "https://www.linkedin.com/company/stout/about/",
     location: "Remote, Chicago, IL, USA",
     description:
-      "Built an automated system to pull and organize financial documents (10-K filings) from the SEC. This sped up document processing by 70% and saved the company over $70,000 annually in manual work.",
+      "Built a custom automation tool using Python to download and sort SEC 10-K filings. Replaced manual data entry with an automated schedule, speeding up document access by 70% and saving the company $70,000 per year in labor costs.",
   },
   {
     name: "Oil Changers",
@@ -36,7 +36,7 @@ export const companies: Company[] = [
     role: "Software Engineering Contractor",
     period: "Jan 2025 - September 2025",
     description:
-      "Built a predictive analytics system for Breeze Autocare across 200+ locations to improve inventory efficiency. Led the rollout of real-time alerting infrastructure across 4+ projects and established a modular Domain-Driven Design (DDD) architecture that saved 20+ hours of rework per major change. Delivered full-stack predictive analytics features and client-facing reports, while implementing reusable CI/CD pipelines that reduced feature wait times by 3 days.",
+      "Built a predictive analytics system for Breeze Autocare across 200+ locations in the united states to improve inventory efficiency. Led the rollout of real-time alerting infrastructure across 4+ projects and established a modular Domain-Driven Design (DDD) architecture that saved 20+ hours of rework per major change. Delivered full-stack predictive analytics features and client-facing reports, while implementing reusable CI/CD pipelines that reduced feature wait times by 70+ hours.",
     link: "https://www.linkedin.com/company/oil-changers-ca/posts/?feedView=all",
     location: "Remote, Pleasanton, CA, USA",
   },
@@ -58,7 +58,7 @@ export const companies: Company[] = [
     period: "Jul 2024 - Aug 2025",
     location: "Remote, Seattle, Washington, USA",
     description:
-      "Led development infrastructure improvements and multiple AI and CRM integrations (HubSpot, Zoho) to streamline internal operations and optimize processes.",
+      "Architected an AI-driven internal CRM that transformed client onboarding by automating Statement of Work generation and converting contracts into actionable project tasks in Zoho. This removed repetitive admin overhead and accelerated project kickoffs. Also built 'Ask AI,' an internal tool that reduced new hire ramp-up time by providing instant answers to project timelines and client history.",
     link: "https://www.linkedin.com/company/the-zig/",
   },
 
