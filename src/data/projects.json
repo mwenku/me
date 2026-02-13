@@ -1,7 +1,7 @@
 [
   {
     "title": "Fleetle",
-    "description": "The Intelligent Fleet Platform Built for Africa. Fleetle uses AI to learn and predict fleet needs—from predictive maintenance and fuel theft detection to intelligent route optimization and driver safety monitoring—giving operators complete confidence in their operations under African road conditions.",
+    "description": "Fusing real-time OBD data, robust APIs, and advanced AI to redefine fleet management. Fleetle turns raw vehicle metrics into predictive intelligence—automating maintenance, optimizing routes, and securing assets. It’s the smart engine driving modern fleet operations.",
     "techStack": "Next.js, TypeScript, Node.js, Go Lang, Serverless",
     "link": "https://www.fleetle.app",
     "previews": [

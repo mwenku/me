@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { projects } from "./projects";
+import { LinkIcon } from "../icons/link";
 
 export const Projects = () => {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
@@ -71,9 +72,10 @@ const ProjectCard = ({
                 href={link}
                 target="_blank"
                 rel="noreferrer"
-                className="hover:underline decoration-muted-foreground/50 underline-offset-4"
+                className="hover:underline decoration-muted-foreground/50 underline-offset-4 flex items-center gap-1"
               >
                 {title}
+                <LinkIcon className="h-3 w-3" />
               </a>
             ) : (
               title

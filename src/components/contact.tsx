@@ -25,7 +25,7 @@ export const Contact = () => {
             href={`mailto:${RESUME.contacts.email}`}
             className="inline-flex items-center gap-2 text-foreground font-medium hover:text-muted-foreground transition-colors group"
           >
-            Get in touch
+            Email
             <ArrowRightIcon className="w-4 h-4 transition-transform group-hover:translate-x-1" />
           </a>
           <span className="hidden sm:block text-muted-foreground/30">•</span>

@@ -1,4 +1,6 @@
 import { RESUME } from "../data/resume";
+import { Skills } from "./skills";
+import { LinkIcon } from "./icons/link";
 
 export const Home = () => {
   return (
@@ -16,25 +18,29 @@ export const Home = () => {
             href={RESUME.contacts.github}
             target="_blank"
             rel="noreferrer"
-            className="text-foreground border-b border-muted-foreground/30 hover:border-foreground transition-colors pb-0.5"
+            className="text-foreground border-b border-muted-foreground/30 hover:border-foreground transition-colors pb-0.5 flex items-center gap-1"
           >
             GitHub
+            <LinkIcon className="h-3 w-3" />
           </a>
           <a
             href={RESUME.contacts.linkedin}
             target="_blank"
             rel="noreferrer"
-            className="text-foreground border-b border-muted-foreground/30 hover:border-foreground transition-colors pb-0.5"
+            className="text-foreground border-b border-muted-foreground/30 hover:border-foreground transition-colors pb-0.5 flex items-center gap-1"
           >
             LinkedIn
+            <LinkIcon className="h-3 w-3" />
           </a>
           <a
             href={`mailto:${RESUME.contacts.email}`}
-            className="text-foreground border-b border-muted-foreground/30 hover:border-foreground transition-colors pb-0.5"
+            className="text-foreground border-b border-muted-foreground/30 hover:border-foreground transition-colors pb-0.5 flex items-center gap-1"
           >
             Email
+            <LinkIcon className="h-3 w-3" />
           </a>
         </div>
+        <Skills />
       </div>
     </section>
   );
