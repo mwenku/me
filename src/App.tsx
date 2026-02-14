@@ -8,6 +8,7 @@ import { Companies } from "./components/companies";
 import { Projects } from "./components/projects";
 import { Contact } from "./components/contact";
 import { CommandMenu } from "./components/command-menu";
+import { FloatingShapes } from "./components/floating-shapes";
 import "./index.css";
 
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
         path="*"
         element={
           <div className="min-h-screen bg-background text-foreground antialiased selection:bg-primary/20 selection:text-primary">
+            <FloatingShapes />
             <CustomCursor />
             <NavBar />
 
