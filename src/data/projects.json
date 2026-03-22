@@ -1,5 +1,19 @@
 [
   {
+    "title": "Raven",
+    "description": "Calmer messaging where you already talk. Raven helps you stay on top of what matters—without bouncing between a dozen screens. Works with WhatsApp, Telegram, iMessage, and RCS.",
+    "techStack": "TypeScript, Next.js, Node.js, AWS, Serverless, EC2",
+    "link": "https://useraven.xyz",
+    "previews": [
+      {
+        "link": "https://useraven.xyz",
+        "title": "Website"
+      }
+    ],
+    "image": "/companies/raven.png",
+    "video": ""
+  },
+  {
     "title": "Fleetle",
     "description": "Fusing real-time OBD data, robust APIs, and advanced AI to redefine fleet management. Fleetle turns raw vehicle metrics into predictive intelligence—automating maintenance, optimizing routes, and securing assets. It’s the smart engine driving modern fleet operations.",
     "techStack": "Next.js, TypeScript, Node.js, Go Lang, Serverless",
