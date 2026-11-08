@@ -10,6 +10,7 @@ import { Expertise } from "./components/expertise";
 import { CommandMenu } from "./components/command-menu";
 import { Arrow, SectionLabel, SocialLinks } from "./components/shared";
 import { Availability } from "./components/availability";
+import { Contact } from "./components/contact";
 
 export default function App() {
   useEffect(() => {
@@ -63,29 +64,7 @@ export default function App() {
           <Integrations />
           <Expertise />
 
-          <section id="contact" className="contact" aria-labelledby="contact-heading">
-            <div className="section-shell contact-shell">
-              <SectionLabel number="08" title="Contact" />
-              <div className="contact-topline"><span className="small-label">Have something in mind?</span><span className="contact-symbol" aria-hidden="true">✳</span></div>
-              <h2 id="contact-heading"><a href={`mailto:${RESUME.contacts.email}`} className="contact-title">Let’s work<br /><span>together.</span><Arrow /></a></h2>
-              <div className="contact-bottom">
-                <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
-                <div className="contact-links">
-                  <a href={RESUME.contacts.calendar} target="_blank" rel="noreferrer">Schedule a chat<Arrow /></a>
-                  <a href={`mailto:${RESUME.contacts.email}`}>{RESUME.contacts.email}<Arrow /></a>
-                </div>
-              </div>
-              <footer className="footer">
-                <a href="#home" className="footer-wordmark" aria-label={`${RESUME.name}, back to top`}>
-                  <img src="/branding/logo-white.svg" alt="" width={52} height={52} className="footer-logo" />
-                  <span>{RESUME.name}</span>
-                </a>
-                <SocialLinks />
-                <a href="#home" className="back-to-top">Back to top ↑</a>
-                <span className="copyright">© {RESUME.name}. All rights reserved.</span>
-              </footer>
-            </div>
-          </section>
+          <Contact />
         </div>
       </main>
       <CommandMenu />
