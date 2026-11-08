@@ -1,0 +1,30 @@
+{
+  "source": "public/branding/logo-white.svg",
+  "artwork": "Existing personal LMN monogram; original contours and crop preserved.",
+  "method": "Native browser canvas export of existing SVG artwork; white mark on rounded ink background.",
+  "svg": {
+    "path": "public/favicon.svg",
+    "embeddedMarkSize": 128,
+    "background": "#24241f",
+    "cornerRadius": 23
+  },
+  "ico": {
+    "path": "public/favicon.ico",
+    "sizes": [
+      16,
+      32,
+      48
+    ],
+    "format": "PNG-compressed ICO entries"
+  },
+  "files": {
+    "public/favicon.svg": {
+      "bytes": 5963,
+      "sha256": "3b2a44a60c384e93e69988bd28c31768db5be03fbcb995d1e775152eb64a522e"
+    },
+    "public/favicon.ico": {
+      "bytes": 3947,
+      "sha256": "4548ebb48540ed0b87974fea562f56db9585b4c7b1eea2d35e8f6f880b46ef9d"
+    }
+  }
+}

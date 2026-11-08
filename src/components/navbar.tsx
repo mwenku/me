@@ -1,39 +1,58 @@
+import { useEffect, useState } from "react";
+import { navigation } from "../data/navigation";
 import { RESUME } from "../data/resume";
+import { Arrow } from "./shared";
 
-export const NavBar = () => {
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+export function NavBar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const updateScroll = () => setScrolled(window.scrollY > 80);
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key !== "Escape") return;
+      setMenuOpen(false);
+    };
+
+    updateScroll();
+    window.addEventListener("scroll", updateScroll, { passive: true });
+    window.addEventListener("keydown", closeOnEscape);
+
+    return () => {
+      window.removeEventListener("scroll", updateScroll);
+      window.removeEventListener("keydown", closeOnEscape);
+    };
+  }, []);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-b from-background/90 via-background/50 to-transparent backdrop-blur-[2px] transition-all duration-300 pb-8">
-      <div className="flex items-center justify-between container mx-auto px-5 h-16">
-        <a href="/" className="group">
-          <img src="/logo-name.svg" alt="welo" className="h-8" />
-        </a>
-
-        <div className="hidden md:flex items-center gap-8">
-          {["About", "Experience", "Projects"].map((item) => (
-            <button
-              key={item}
-              onClick={() => scrollToSection(item.toLowerCase())}
-              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors relative after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:h-[2px] after:w-0 after:bg-primary after:transition-all hover:after:w-full"
-            >
-              {item}
-            </button>
+    <header className={`site-header ${scrolled ? "is-scrolled" : ""} ${menuOpen ? "menu-open" : ""}`}>
+      <a href="#home" className="wordmark" aria-label="Home" onClick={() => setMenuOpen(false)}>
+        <img src="/branding/logo-black.svg" alt="" width={44} height={44} className="wordmark-logo" />
+      </a>
+      <nav aria-label="Primary" className="desktop-navigation">
+        {navigation.map((item) => item.primary && <a href={`#${item.section}`} key={item.title}>{item.title}</a>)}
+      </nav>
+      <a href={RESUME.contacts.calendar} className="header-contact" target="_blank" rel="noreferrer" onClick={() => setMenuOpen(false)}>Schedule a chat <Arrow /></a>
+      <button
+        type="button"
+        className="menu-toggle"
+        aria-expanded={menuOpen}
+        aria-controls="mobile-navigation"
+        aria-label={menuOpen ? "Close menu" : "Open menu"}
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        <span />
+        <span />
+      </button>
+      {menuOpen && (
+        <nav id="mobile-navigation" className="mobile-navigation" aria-label="Mobile">
+          {navigation.map((item, index) => (
+            <a href={`#${item.section}`} key={item.title} onClick={() => setMenuOpen(false)}>
+              <span className="navigation-index">{String(index + 1).padStart(2, "0")}</span>{item.title}<Arrow />
+            </a>
           ))}
-        </div>
-
-        <a
-          href={`mailto:${RESUME.contacts.email}`}
-          className="hidden md:flex items-center justify-center px-4 py-2 text-sm font-medium text-primary-foreground bg-primary rounded-full hover:bg-primary/90 transition-all hover:shadow-lg hover:shadow-primary/25 active:scale-95"
-        >
-          Let's Talk
-        </a>
-      </div>
-    </nav>
+        </nav>
+      )}
+    </header>
   );
-};
+}

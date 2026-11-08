@@ -1,0 +1,17 @@
+{
+  "profile": "src/data/resume.tsx",
+  "professionalWork": "src/data/companies.ts",
+  "reportingWork": "Original company descriptions for Union54, Aiponics, Oil Changers and Stout in src/data/companies.ts",
+  "projectDetails": {
+    "Mitarbo": "User-provided URL: https://mitarbo.com; user-provided landing screenshot: /Users/mwlnka/.t3/userdata/attachments/475a900e-eae8-4b77-b976-61488bbec8cf-5d53f5f0-bf1e-4722-82a5-d2597087865d.png; copied unchanged to public/companies/mitarbo.png.",
+    "Songo Music Game": "https://www.songomusicgame.com/how-to-play/",
+    "Raven": "https://www.useraven.xyz/",
+    "Fleetle": "https://www.fleetle.app/",
+    "Car Breakers\u2019 Wall": "https://apps.apple.com/zm/app/car-breakers-wall/id6746924312"
+  },
+  "backendWork": {
+    "Shop & Smile": "Existing src/data/companies.ts: 60x faster AWS Lambda deployments across 24+ backend services; Rust and Node.js developer CLI tools improved velocity by 25%; type-safe EventBridge wrappers; DDD enabled database replacement without logic rewrites.",
+    "Union54": "Existing src/data/companies.ts and src/data/resume.tsx: restored core Mastercard debit-card issuing API; on-call maintenance and robust error handling. API technology stack not specified.",
+    "Bwangu Delivery": "Existing src/data/companies.ts and src/data/resume.tsx: solo founding engineer built mobile app, API and admin dashboard from scratch; 10,000+ orders/year and 25% MoM growth. Project technology stack not specified."
+  }
+}

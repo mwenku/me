@@ -1,15 +1,29 @@
 [
   {
-    "title": "Songo Music Game",
-    "description": "An online music guessing game where you hear short song clips and guess the track. Search by artist, genre, era, or mood, then play solo or local multiplayer rounds in your browser.",
-    "link": "https://www.songomusicgame.com",
+    "title": "Mitarbo",
+    "description": "An HR and IT workspace for managing people, leave, equipment, and onboarding, with time tracking, projects, chat, shared knowledge, and notices in one place.",
+    "link": "https://mitarbo.com",
     "previews": [
       {
-        "link": "https://www.songomusicgame.com",
+        "link": "https://mitarbo.com",
         "title": "Website"
       }
     ],
-    "image": "/companies/songomusicgame.png",
+    "image": "/companies/mitarbo.png",
+    "video": ""
+  },
+  {
+    "title": "Fleetle",
+    "description": "Fusing real-time OBD data, robust APIs, and advanced AI to redefine fleet management. Fleetle turns raw vehicle metrics into predictive intelligence—automating maintenance, optimizing routes, and securing assets. It’s the smart engine driving modern fleet operations.",
+    "techStack": "Next.js, TypeScript, Node.js, Go Lang, Serverless",
+    "link": "https://www.fleetle.app",
+    "previews": [
+      {
+        "link": "https://www.fleetle.app",
+        "title": "Website"
+      }
+    ],
+    "image": "/companies/fleetle_app.png",
     "video": ""
   },
   {
@@ -27,17 +41,16 @@
     "video": ""
   },
   {
-    "title": "Fleetle",
-    "description": "Fusing real-time OBD data, robust APIs, and advanced AI to redefine fleet management. Fleetle turns raw vehicle metrics into predictive intelligence—automating maintenance, optimizing routes, and securing assets. It’s the smart engine driving modern fleet operations.",
-    "techStack": "Next.js, TypeScript, Node.js, Go Lang, Serverless",
-    "link": "https://www.fleetle.app",
+    "title": "Songo Music Game",
+    "description": "An online music guessing game where you hear short song clips and guess the track. Search by artist, genre, era, or mood, then play solo or local multiplayer rounds in your browser.",
+    "link": "https://www.songomusicgame.com",
     "previews": [
       {
-        "link": "https://www.fleetle.app",
+        "link": "https://www.songomusicgame.com",
         "title": "Website"
       }
     ],
-    "image": "/companies/fleetle_app.png",
+    "image": "/companies/songomusicgame.png",
     "video": ""
   },
   {

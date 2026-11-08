@@ -1,0 +1,5 @@
+Asset: public/assets/hero-sculpture.jpg
+Mode: built-in image_gen tool; original generation converted to JPEG for the website.
+
+Final prompt:
+Use case: stylized-concept. Asset type: cinematic full-bleed background for a software engineer portfolio inspired by an editorial photography studio. Primary request: a photorealistic abstract sculptural loop of machined brushed aluminium, an intricately folded flowing metal ribbon with smooth rounded edges forming an impossible open torus, suspended in an almost black studio. Composition: extra wide 16:9 landscape; sculpture large on the right half, cropped at the right edge and top, left half primarily clean near-black negative space for white headline overlay. Low camera viewpoint and macro detail. Lighting: silver softbox highlights skimming fine satin metal texture, very subtle warm amber reflected edges, deep charcoal shadows, rich but restrained contrast, cinematic photographic grain. Palette black, graphite, muted silver, hints of warm ivory. High-end industrial art direction, elegant tactile real materials, no neon, no rainbow, no computer screens, no circuitry, no text, no logos, no watermarks.

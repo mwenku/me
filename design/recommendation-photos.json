@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Jyri Vähä-Pietilä",
+    "file": "public/people/jyri-vaha-pietila.jpg",
+    "source": "https://www.crunchbase.com/organization/union54",
+    "image": "https://images.crunchbase.com/image/upload/c_thumb%2Ch_50%2Cw_50%2Cf_auto%2Cg_face%2Cz_0.7%2Cb_white%2Cq_auto%3Aeco%2Cdpr_1/t_cb-profile-person-image/5de2cd6ad34945d780a80f95db99449c?ik-sanitizeSvg=true"
+  },
+  {
+    "name": "Elijah Mwaba",
+    "file": "public/people/elijah-mwaba.jpg",
+    "source": "https://www.linkedin.com/pulse/building-future-work-reflections-cavendish-july-remote-joshua-chipile-xxjmf",
+    "identitySource": "https://zm.linkedin.com/in/elijah-mwaba",
+    "image": "https://media.licdn.com/dms/image/v2/D4D03AQEo76abqHNWiQ/profile-displayphoto-scale_400_400/B4DZ2yMcHmJsAg-/0/1776811100410?e=2147483647&v=beta&t=mXH1NOkorg0JKMp9rhvyj8ZFsDr7f28L319Dbzs_3pk"
+  },
+  {
+    "name": "Mwila Wamunyima",
+    "file": "public/people/mwila-wamunyima.jpg",
+    "source": "https://zm.linkedin.com/in/mwila-wamunyima",
+    "image": "https://media.licdn.com/dms/image/v2/D4D03AQEqKPsGobHPmg/profile-displayphoto-shrink_200_200/B4DZXZIGu5HAAY-/0/1743104541397?e=2147483647&v=beta&t=6Z-CXrIaGRPR23SEniKHNsiClks6BUgEUosnzLvpmcM"
+  },
+  {
+    "name": "Aubrey Zulu",
+    "file": "public/people/aubrey-zulu.jpg",
+    "source": "https://github.com/aubreyzulu",
+    "identitySource": "https://www.aubreyzulu.com/",
+    "image": "https://avatars.githubusercontent.com/u/20232062?v=4"
+  },
+  {
+    "name": "Kaembe Chisenga",
+    "file": "public/people/kaembe-chisenga.jpg",
+    "source": "https://www.linkedin.com/posts/kaembe_bwangu-activity-7216295643781222400-Jk-R",
+    "image": "https://media.licdn.com/dms/image/v2/D4D03AQHsId8WqpdUgA/profile-displayphoto-scale_400_400/B4DaCH3Eo1KoAk-/0/1788985756801?e=2147483647&v=beta&t=sH0Xv-dFAl2A99gTHuA-ARlvyFXhNPI-abFNdRIo8PU"
+  }
+]

@@ -1,163 +1,70 @@
 import { useEffect, useState } from "react";
 import { Command } from "cmdk";
 import { RESUME } from "../data/resume";
+import { navigation } from "../data/navigation";
+import { Arrow } from "./shared";
 
-export const CommandMenu = () => {
+export function CommandMenu() {
   const [open, setOpen] = useState(false);
+  const [notice, setNotice] = useState("");
 
   useEffect(() => {
-    const down = (e: KeyboardEvent) => {
-      if (e.key === "k" && (e.metaKey || e.ctrlKey)) {
-        e.preventDefault();
-        setOpen((open) => !open);
-      }
+    const handleShortcut = (event: KeyboardEvent) => {
+      if (event.key !== "k" || (!event.metaKey && !event.ctrlKey)) return;
+      event.preventDefault();
+      setOpen((previousOpen) => !previousOpen);
     };
 
-    document.addEventListener("keydown", down);
-    return () => document.removeEventListener("keydown", down);
+    document.addEventListener("keydown", handleShortcut);
+    return () => document.removeEventListener("keydown", handleShortcut);
   }, []);
+
+  useEffect(() => {
+    if (!notice) return;
+    const timeout = window.setTimeout(() => setNotice(""), 4000);
+    return () => window.clearTimeout(timeout);
+  }, [notice]);
+
+  const navigate = (section: string) => {
+    window.location.hash = section;
+    setOpen(false);
+  };
+
+  const copyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText(RESUME.contacts.email);
+      setNotice("Email copied to clipboard.");
+    } catch {
+      setNotice(`Email: ${RESUME.contacts.email}`);
+    }
+    setOpen(false);
+  };
 
   return (
     <>
-      <div className="fixed bottom-5 right-5 z-50 animate-fade-in opacity-0 delay-700 hidden lg:block">
-        <p className="text-xs font-mono text-muted-foreground/40 bg-background/50 backdrop-blur-sm px-2 py-1 rounded border border-border/50">
-          Press <span className="text-foreground">⌘K</span> to start
-        </p>
-      </div>
-
-      <Command.Dialog
-        open={open}
-        onOpenChange={setOpen}
-        label="Global Command Menu"
-        className="fixed inset-0 z-50 flex items-center justify-center bg-background/20 backdrop-blur-[2px] p-4"
-        onClick={(e: React.MouseEvent) => {
-          if (e.target === e.currentTarget) setOpen(false);
-        }}
-      >
-        <div className="w-full max-w-[640px] bg-card border border-border shadow-2xl rounded-xl overflow-hidden animate-fade-in ring-1 ring-black/5">
-          <Command.Input
-            className="w-full h-14 px-4 bg-transparent border-b border-border outline-none text-foreground placeholder-muted-foreground font-medium text-lg font-display"
-            placeholder="Type a command or search..."
-          />
-          <Command.List className="max-h-[300px] overflow-y-auto overflow-x-hidden p-2">
-            <Command.Empty className="py-6 text-center text-sm text-muted-foreground">
-              No results found.
-            </Command.Empty>
-
-            <Command.Group
-              heading="General"
-              className="text-xs font-medium text-muted-foreground px-2 py-1.5 mb-2 uppercase tracking-wider"
-            >
-              <Item
-                onSelect={() => {
-                  window.open(
-                    RESUME.contacts.email
-                      ? `mailto:${RESUME.contacts.email}`
-                      : "",
-                    "_self",
-                  );
-                  setOpen(false);
-                }}
-              >
-                <span className="mr-2">✉️</span> Send Email
-              </Item>
-              <Item
-                onSelect={() => {
-                  navigator.clipboard.writeText(RESUME.contacts.email);
-                  setOpen(false);
-                  alert("Email copied to clipboard!");
-                }}
-              >
-                <span className="mr-2">📋</span> Copy Email
-              </Item>
-              <Item
-                onSelect={() => {
-                  // Assuming resume is at /resume.pdf
-                  window.open("/resume.pdf", "_blank");
-                  setOpen(false);
-                }}
-              >
-                <span className="mr-2">📄</span> Download Resume
-              </Item>
-            </Command.Group>
-
-            <Command.Group
-              heading="Social"
-              className="text-xs font-medium text-muted-foreground px-2 py-1.5 mb-2 uppercase tracking-wider"
-            >
-              <Item
-                onSelect={() => {
-                  window.open(RESUME.contacts.github, "_blank");
-                  setOpen(false);
-                }}
-              >
-                <span className="mr-2">💻</span> GitHub
-              </Item>
-              <Item
-                onSelect={() => {
-                  window.open(RESUME.contacts.linkedin, "_blank");
-                  setOpen(false);
-                }}
-              >
-                <span className="mr-2">🔗</span> LinkedIn
-              </Item>
-            </Command.Group>
-
-            <Command.Group
-              heading="Navigation"
-              className="text-xs font-medium text-muted-foreground px-2 py-1.5 mb-2 uppercase tracking-wider"
-            >
-              <Item
-                onSelect={() => {
-                  document
-                    .getElementById("about")
-                    ?.scrollIntoView({ behavior: "smooth" });
-                  setOpen(false);
-                }}
-              >
-                <span className="mr-2">🏠</span> Home
-              </Item>
-              <Item
-                onSelect={() => {
-                  document
-                    .getElementById("companies")
-                    ?.scrollIntoView({ behavior: "smooth" });
-                  setOpen(false);
-                }}
-              >
-                <span className="mr-2">💼</span> Experience
-              </Item>
-              <Item
-                onSelect={() => {
-                  document
-                    .getElementById("projects")
-                    ?.scrollIntoView({ behavior: "smooth" });
-                  setOpen(false);
-                }}
-              >
-                <span className="mr-2">🚀</span> Projects
-              </Item>
-            </Command.Group>
-          </Command.List>
-        </div>
+      <button type="button" className="command-trigger" onClick={() => setOpen(true)} aria-label="Open command menu">
+        Quick navigation <kbd>⌘ K</kbd>
+      </button>
+      <Command.Dialog open={open} onOpenChange={setOpen} label="Quick navigation" className="command-dialog">
+        <div className="command-heading"><span>Quick navigation</span><button type="button" onClick={() => setOpen(false)} aria-label="Close command menu">Esc</button></div>
+        <Command.Input autoFocus placeholder="Where would you like to go?" aria-label="Search commands" />
+        <Command.List>
+          <Command.Empty>No results found.</Command.Empty>
+          <Command.Group heading="Explore">
+            {navigation.map((item) => (
+              <Command.Item key={item.section} onSelect={() => navigate(item.section)}>{item.title}<Arrow /></Command.Item>
+            ))}
+          </Command.Group>
+          <Command.Group heading="Connect">
+            <Command.Item onSelect={() => { window.location.href = `mailto:${RESUME.contacts.email}`; setOpen(false); }}>Send Email<Arrow /></Command.Item>
+            <Command.Item onSelect={copyEmail}>Copy Email<Arrow /></Command.Item>
+            <Command.Item onSelect={() => { window.open(RESUME.contacts.calendar, "_blank", "noopener,noreferrer"); setOpen(false); }}>Schedule a chat<Arrow /></Command.Item>
+            <Command.Item onSelect={() => { window.open(RESUME.contacts.github, "_blank", "noopener,noreferrer"); setOpen(false); }}>GitHub<Arrow /></Command.Item>
+            <Command.Item onSelect={() => { window.open(RESUME.contacts.linkedin, "_blank", "noopener,noreferrer"); setOpen(false); }}>LinkedIn<Arrow /></Command.Item>
+          </Command.Group>
+        </Command.List>
       </Command.Dialog>
+      <div className={`notice ${notice ? "notice-visible" : ""}`} role="status">{notice}</div>
     </>
   );
-};
-
-const Item = ({
-  children,
-  onSelect,
-}: {
-  children: React.ReactNode;
-  onSelect: () => void;
-}) => {
-  return (
-    <Command.Item
-      onSelect={onSelect}
-      className="flex items-center px-4 py-3 rounded-lg text-sm text-foreground aria-selected:bg-secondary aria-selected:text-primary cursor-pointer transition-colors"
-    >
-      {children}
-    </Command.Item>
-  );
-};
+}

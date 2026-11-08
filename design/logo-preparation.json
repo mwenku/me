@@ -1,0 +1,25 @@
+{
+  "source": "public/branding/logo-original.png",
+  "originalAttachment": "/Users/mwlnka/.t3/userdata/attachments/475a900e-eae8-4b77-b976-61488bbec8cf-7b408284-7613-4e60-be57-00d301efcd32.png",
+  "mode": "Built-in image_gen extraction trials, followed by source-based SVG masks for final artwork fidelity.",
+  "finalFiles": {
+    "black": "public/branding/logo-black.svg",
+    "white": "public/branding/logo-white.svg",
+    "original": "public/branding/logo-original.png"
+  },
+  "prompts": {
+    "black": "Use case: background-extraction. Asset type: existing personal LMN brand monogram for a website. Image 1 is the EDIT TARGET. Precisely extract the original interlocking rounded L, M and N logo mark from its black square canvas. Preserve the exact original silhouette, relative geometry, rounded corners, all negative spaces, interlocking arrangement, spacing and proportions. This is existing brand artwork: do not redesign, add lettering, change the number of shapes, stylize, or invent strokes. Remove every black background region, including the spaces between the three original pieces. Output a flat, clean, antialiased solid-color monogram on genuine alpha transparency, tightly framed in a square with roughly 5 percent transparent padding around the full mark. No shadows, gradients, texture, glow, outlines, extra objects or text. Recolor only the original white logo to solid pure black #000000, with transparent negative spaces and background.",
+    "white": "Use case: background-extraction. Asset type: existing personal LMN brand monogram for a website. Image 1 is the EDIT TARGET. Precisely extract the original interlocking rounded L, M and N logo mark from its black square canvas. Preserve the exact original silhouette, relative geometry, rounded corners, all negative spaces, interlocking arrangement, spacing and proportions. This is existing brand artwork: do not redesign, add lettering, change the number of shapes, stylize, or invent strokes. Remove every black background region, including the spaces between the three original pieces. Output a flat, clean, antialiased solid-color monogram on genuine alpha transparency, tightly framed in a square with roughly 5 percent transparent padding around the full mark. No shadows, gradients, texture, glow, outlines, extra objects or text. Keep the logo solid pure white #FFFFFF, with transparent negative spaces and background."
+  },
+  "refinementPrompt": "Use case: precise-object-edit. Edit target: the provided transparent black LMN personal logo. Change only the flat ink color of the existing black logo to pure solid white (#FFFFFF). Keep its exact silhouette, arrangement of all three pieces, negative spaces, rounded corners, scale, canvas size, framing and transparency unchanged. Every logo surface must be perfectly flat white with clean antialiased edges. Preserve all transparent background and negative spaces. No texture, smudges, shading, gray patches, gradients, glow, shadow or outlines. Do not redesign or regenerate its geometry. Output the single original mark in flat white on genuine alpha transparency.",
+  "finalTreatment": {
+    "method": "Original PNG embedded unchanged in both SVG masks; luminance creates alpha and a flat rectangle supplies black or white ink.",
+    "viewBox": "422 418 411 411",
+    "alphaMatrix": "0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0.2126 0.7152 0.0722 0 0",
+    "alphaTransfer": {
+      "slope": 1.15,
+      "intercept": -0.05
+    }
+  },
+  "validation": "Original attachment retained unchanged. Final variants share the same source, mask and crop. Generated extraction trials are not used by the website."
+}

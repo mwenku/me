@@ -1,0 +1,46 @@
+{
+  "companies": {
+    "union54.png": "User-provided image.png",
+    "zig-group.png": "https://cdn.sanity.io/images/e2zt7kbx/production/8b061e67e9fbebb912bb6a0cc93ae2b242f9ec63-1024x1024.png?w=128&h=128",
+    "shop-and-smile.svg": "https://help.prod.shopnsmile.org/sns.svg",
+    "bwangu-delivery.png": "https://bwangudelivery.com/images/bwangu-logo-icon.png",
+    "isampo.png": "https://web.archive.org/web/20210813090101id_/https://isampo.com/images/isampo-logo.png",
+    "stout.png": "https://www.stout.com/static/stout/images/icons/apple-touch-icon.png?v=2",
+    "oil-changers.png": "https://oilchangers.com/wp-content/uploads/2020/10/cropped-logo2-01-180x180.png",
+    "aiponics.png": "https://cdn.prod.website-files.com/5fbd1a116ccb705ef745ed9a/5fbe0b6ff9fc00229582e678_h1.png"
+  },
+  "integrations": {
+    "hubspot.svg": "https://www.hubspot.com/",
+    "bridge.svg": "https://bridge.xyz/",
+    "lenco.jpg": "https://files.readme.io/cf066d0-small-512.jpg",
+    "aws.svg": "https://aws.amazon.com/",
+    "zoho.svg": "https://www.zohowebstatic.com/sites/zweb/images/commonroot/zoho-logo-web.svg",
+    "mastercard.svg": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg",
+    "paymentology.svg": "https://www.paymentology.com/hubfs/pmty25/logo/Navy%20PMGTY%20Full%20Logo_cropped.svg",
+    "cybersource.png": "https://www.cybersource.com/conf/cybs-2020/settings/wcm/templates/en-us-content-page-template/structure/_jcr_content/root/header/logo.img.png/1618856916900.png",
+    "onfido.svg": "https://raw.githubusercontent.com/onfido/onfido-sdk-ui/148a5a79d51998dec947d128e3090edd186d3192/src/components/Theme/assets/onfido-logo.svg",
+    "power-apps.svg": "https://download.microsoft.com/download/498606aa-6d27-4f13-aa5c-1401078c153b/Power-Platform-icons-scalable.zip",
+    "google-drive.png": "https://www.gstatic.com/images/branding/productlogos/drive_2026/v2/web-64dp/logo_drive_2026_color_2x_web_64dp.png",
+    "slack.svg": "https://a.slack-edge.com/bv1-10/slack_logo-ebd02d1.svg",
+    "apata.svg": "https://portal.apata.io/logo.svg",
+    "dhl.svg": "https://developer.dhl.com/themes/custom/dhl/logo.svg",
+    "aws-quicksight.svg": "https://d1.awsstatic.com/webteam/architecture-icons/q1-2025/Asset-Package_02072025.dee42cd0a6eaacc3da1ad9519579357fb546f803.zip",
+    "aws-lambda.svg": "https://d1.awsstatic.com/webteam/architecture-icons/q1-2025/Asset-Package_02072025.dee42cd0a6eaacc3da1ad9519579357fb546f803.zip",
+    "amazon-dynamodb.svg": "https://d1.awsstatic.com/webteam/architecture-icons/q1-2025/Asset-Package_02072025.dee42cd0a6eaacc3da1ad9519579357fb546f803.zip",
+    "python.svg": "https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg",
+    "power-bi.svg": "https://raw.githubusercontent.com/microsoft/PowerBI-Icons/73f8857af8dfe56acab966db952928d621f84ecc/SVG/Power-BI.svg",
+    "azure-pipelines.svg": "https://learn.microsoft.com/static/media/product/azure/pipelines.svg"
+  },
+  "archiveEntries": {
+    "power-apps.svg": "Power Platform/PowerApps_scalable.svg",
+    "aws-quicksight.svg": "Architecture-Service-Icons_02072025/Arch_Analytics/64/Arch_Amazon-QuickSight_64.svg",
+    "aws-lambda.svg": "Architecture-Service-Icons_02072025/Arch_Compute/64/Arch_AWS-Lambda_64.svg",
+    "amazon-dynamodb.svg": "Architecture-Service-Icons_02072025/Arch_Database/64/Arch_Amazon-DynamoDB_64.svg"
+  },
+  "customIcons": {
+    "sql.svg": "Code-native generic database icon for SQL, which has no single vendor logo."
+  },
+  "assetAdjustments": {
+    "python.svg": "Added a viewBox matching the original point dimensions and removed SVG comments; paths and colors preserved."
+  }
+}

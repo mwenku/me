@@ -1,6 +1,7 @@
 export interface Company {
   name: string;
   logo: string;
+  recommendationTheme?: string;
   role: string;
   description: string;
   link?: string;
@@ -12,7 +13,8 @@ export interface Company {
 export const companies: Company[] = [
   {
     name: "Union 54 (YC S21)",
-    logo: "/companies/union54.png",
+    logo: "/companies/icons/union54.png",
+    recommendationTheme: "purple",
     role: "Software Engineer",
     link: "https://www.linkedin.com/company/union54/posts/?feedView=all",
     period: "Sept 2025 - Present",
@@ -23,7 +25,8 @@ export const companies: Company[] = [
 
   {
     name: "The Zig Group",
-    logo: "/companies/breeze.png", // Using Breeze as it's under Zig? Or maybe Shop and Smile? User said Breeze is under Zig. I'll use a generic icon or maybe I should have generated a Zig logo. I'll use the Breeze one for Breeze entry if I have one.
+    logo: "/companies/icons/zig-group.png",
+    recommendationTheme: "neutral",
     role: "Software Engineering Consultant",
     period: "Jul 2024 - Aug 2025",
     location: "Seattle, Washington, USA",
@@ -33,16 +36,16 @@ export const companies: Company[] = [
     projects: [
       {
         name: "Stout",
-        logo: "/companies/stout.png",
+        logo: "/companies/icons/stout.png",
         role: "Software Engineering Contractor",
         link: "https://www.linkedin.com/company/stout/about/",
         location: "Chicago, USA",
         description:
-          "Built a custom automation tool using Python to download and sort SEC 10-K filings. Replaced manual data entry with an automated schedule, speeding up document access by 70% and saving the company $70,000 per year in labor costs.",
+          "Saved the company $70,000 per year in labor costs by building a custom Python tool to download and sort SEC 10-K filings. Replaced manual data entry with an automated schedule, speeding up document access by 70%.",
       },
       {
         name: "Oil Changers",
-        logo: "/companies/oil-changers.png",
+        logo: "/companies/icons/oil-changers.png",
         role: "Software Engineering Contractor",
         description:
           "Built a predictive analytics system for Breeze Autocare across 200+ locations in the united states to improve inventory efficiency. Led the rollout of real-time alerting infrastructure across 4+ projects and established a modular Domain-Driven Design (DDD) architecture that saved 20+ hours of rework per major change. Delivered full-stack predictive analytics features and client-facing reports, while implementing reusable CI/CD pipelines that reduced feature wait times by 70+ hours.",
@@ -52,11 +55,11 @@ export const companies: Company[] = [
       },
       {
         name: "Aiponics Inc",
-        logo: "/companies/hrvst.png",
+        logo: "/companies/icons/aiponics.png",
         role: "Software Engineering Contractor",
         location: "Seattle, USA",
         description:
-          "Helped Aiponics expand from B2B to consumer markets, generating $1M in revenue by connecting their platform to a major delivery app. Automated 90% of ordering workflows so the team could handle more clients. Automated their weekly reporting. Replaced a slow manual Excel process with real-time dashboards that update in under 5 minutes, saving the team days of work every week.",
+          "Helped Aiponics expand from B2B to consumer markets, generating $1M in revenue by connecting their platform to a major delivery app. Automated 90% of ordering workflows so the team could handle more clients. Automated their weekly reporting, replacing a manual Excel process that took about five days with real-time dashboards that produce reports in under five minutes, saving the team days of work every week.",
         link: "https://www.linkedin.com/company/aiponics/posts/?feedView=all",
       },
     ],
@@ -64,7 +67,7 @@ export const companies: Company[] = [
 
   {
     name: "Shop & Smile",
-    logo: "/companies/shop-and-smile.png",
+    logo: "/companies/icons/shop-and-smile.svg",
     role: "Founding Software Engineer",
     period: "May 2023 - Aug 2024",
     location: "Remote, Belgium",
@@ -74,7 +77,8 @@ export const companies: Company[] = [
   },
   {
     name: "Bwangu Delivery",
-    logo: "/companies/wango.png",
+    logo: "/companies/icons/bwangu-delivery.png",
+    recommendationTheme: "red",
     role: "Founding Software Engineer",
     period: "Feb 2021 - Dec 2023",
     location: "Remote, Zambia",
@@ -84,7 +88,7 @@ export const companies: Company[] = [
   },
   {
     name: "iSampo",
-    logo: "/companies/isample.png",
+    logo: "/companies/icons/isampo.png",
     role: "Software Engineer",
     period: "Jul 2020 - Feb 2021",
     location: "Hybrid, Zambia",

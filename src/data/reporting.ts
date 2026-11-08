@@ -1,0 +1,71 @@
+export const reportingTechnologies = [
+  { name: "Microsoft Power BI", logo: "/integrations/power-bi.svg" },
+  { name: "Amazon QuickSight", logo: "/integrations/aws-quicksight.svg" },
+  { name: "SQL", logo: "/integrations/sql.svg" },
+  { name: "Microsoft Power Apps", logo: "/integrations/power-apps.svg" },
+  { name: "AWS Lambda", logo: "/integrations/aws-lambda.svg" },
+  { name: "Azure Pipelines", logo: "/integrations/azure-pipelines.svg" },
+  { name: "Amazon DynamoDB", logo: "/integrations/amazon-dynamodb.svg" },
+  { name: "Python", logo: "/integrations/python.svg" },
+];
+
+export const reportingWork = [
+  {
+    id: "union54-regulatory-reporting",
+    company: "Union54",
+    logo: "/companies/icons/union54.png",
+    title: "Regulatory reporting",
+    source: "DynamoDB records",
+    output: "Structured BI reports",
+    description:
+      "I own the regulatory reporting service, turning operational records in DynamoDB into structured BI reports for central-bank requirements.",
+    result: "Supports central-bank compliance.",
+    metric: "Compliance",
+    metricLabel: "Central-bank reporting",
+    metricContext: "Reporting outcome",
+  },
+  {
+    id: "aiponics-reporting-automation",
+    company: "Aiponics",
+    logo: "/companies/icons/aiponics.png",
+    title: "Weekly reports, ready in minutes",
+    source: "Manual Excel reporting",
+    output: "Dashboards and automated reports",
+    description:
+      "I replaced a manual Excel reporting process that took about five days with automated dashboards that update in under five minutes.",
+    result: "Reclaimed days of manual reporting work each week.",
+    before: "~5 days",
+    metric: "<5 min",
+    metricLabel: "Now · reporting turnaround",
+    metricContext: "Previously",
+  },
+  {
+    id: "oil-changers-predictive-analytics",
+    company: "Oil Changers / Breeze Autocare",
+    logo: "/companies/icons/oil-changers.png",
+    title: "Predictive analytics for inventory",
+    source: "Breeze Autocare",
+    output: "Predictive analytics and client reports",
+    description:
+      "I built predictive analytics for Breeze Autocare and delivered client-facing reports to support inventory efficiency.",
+    result: "Supported inventory planning across the US.",
+    metric: "200+",
+    metricLabel: "US locations covered by analytics",
+    metricContext: "Scale",
+  },
+  {
+    id: "stout-sec-filing-automation",
+    company: "Stout",
+    logo: "/companies/icons/stout.png",
+    title: "SEC filings collected on a schedule",
+    source: "Manual downloads and data entry",
+    output: "Scheduled collection and sorting",
+    description:
+      "I replaced manual SEC 10-K downloads and data entry with a Python tool that collects and sorts filings on a schedule.",
+    result: "Document access also became 70% faster.",
+    metric: "$70k",
+    metricUnit: "/year",
+    metricLabel: "Labor cost savings",
+    metricContext: "Business impact",
+  },
+];
