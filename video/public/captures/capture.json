@@ -1,0 +1,11 @@
+{
+  "siteUrl": "http://localhost:5173",
+  "desktop": {
+    "width": 1440,
+    "height": 1000
+  },
+  "mobile": {
+    "width": 390,
+    "height": 844
+  }
+}

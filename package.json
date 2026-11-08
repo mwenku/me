@@ -9,7 +9,12 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "update-metadata": "node scripts/fetch-metadata.js",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "video:studio": "remotion studio video/index.ts --port=3333",
+    "video:capture": "node video/capture-site.mjs",
+    "video:soundtrack": "node video/create-soundtrack.mjs",
+    "video:typecheck": "tsc --noEmit -p video/tsconfig.json",
+    "video:render": "remotion render video/index.ts WeloLaunch video/out/welo-launch.mp4"
   },
   "dependencies": {
     "cmdk": "^1.1.1",
@@ -18,6 +23,9 @@
     "react-router-dom": "^6.23.1"
   },
   "devDependencies": {
+    "@remotion/cli": "4.0.541",
+    "@remotion/fonts": "4.0.541",
+    "@remotion/media": "4.0.541",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
@@ -28,6 +36,8 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
     "postcss": "^8.4.38",
+    "puppeteer-core": "25.16.0",
+    "remotion": "4.0.541",
     "tailwindcss": "^3.4.3",
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
