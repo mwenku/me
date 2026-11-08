@@ -9,6 +9,7 @@ import { Reporting } from "./components/reporting";
 import { Expertise } from "./components/expertise";
 import { CommandMenu } from "./components/command-menu";
 import { Arrow, SectionLabel, SocialLinks } from "./components/shared";
+import { Availability } from "./components/availability";
 
 export default function App() {
   useEffect(() => {
@@ -51,6 +52,7 @@ export default function App() {
                   <SocialLinks />
                 </div>
               </div>
+              <Availability />
             </section>
           </div>
 
