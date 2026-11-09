@@ -1,7 +1,6 @@
 export const RESUME = {
   name: "Lucas",
   title: "Software Engineer",
-  resumeUrl: "/lucas-nkuta-resume.pdf",
   location: "",
   contacts: {
     email: "mwelwankuta@gmail.com",

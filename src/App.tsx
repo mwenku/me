@@ -45,7 +45,7 @@ export default function App() {
                   <p>{RESUME.summary}</p>
                   <div className="introduction-primary-actions">
                     <a href="#projects" className="pill-button">Explore my work <Arrow /></a>
-                    <a href={RESUME.resumeUrl} className="pill-button pill-button-secondary" download>Download my résumé <Arrow diagonal={false} /></a>
+                    <a href={`mailto:${RESUME.contacts.email}?subject=Resume%20request`} className="pill-button pill-button-secondary">Email for my résumé <Arrow /></a>
                   </div>
                 </div>
                 <div className="introduction-links">

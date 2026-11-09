@@ -51,7 +51,6 @@ img { display: block; max-width: 100%; }
 .pill-button .arrow-icon { width: 15px; height: 15px; }
 .pill-button-secondary { color: var(--ink); background: transparent; box-shadow: inset 0 0 0 1px #8f8c80; }
 .pill-button-secondary:hover { color: var(--paper); background: var(--ink); }
-.pill-button-secondary .arrow-icon { transform: rotate(90deg); }
 
 .page-content { position: relative; background: var(--paper); }
 .section-shell { width: 90%; max-width: 1440px; margin: auto; padding: 112px 16px; }
